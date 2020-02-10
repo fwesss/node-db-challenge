@@ -81,3 +81,7 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+.vscode
+yarn.lock
+**/*.db3
