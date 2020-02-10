@@ -10,7 +10,7 @@ const getById = id =>
 export const insert = project =>
   db('projects')
     .insert(project)
-    .then(id => getById(id))
+    .then(id => getById(id[0]))
 
 export default {
   get,
