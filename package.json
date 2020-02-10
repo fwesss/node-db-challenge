@@ -4,13 +4,15 @@
   "repository": "https://github.com/fwesss/node-db-challenge.git",
   "license": "MIT",
   "author": "Westley Feller <feller.westley@gmail.com>",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "check-format": "yarn run prettier --ignore-path .gitignore --list-different",
     "format": "yarn run prettier --ignore-path .gitignore --write \"**/*.+(js|json|css|md|mdx|html)\"",
     "lint": "eslint --ext .js .",
+    "migrate:latest": "npx knex migrate:latest",
+    "migrate:rollback": "npx knex migrate:rollback",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(json|js)\"",
+    "seed:run": "npx knex seed:run",
     "server": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js",
     "validate": "npm-run-all --parallel check-format lint"
   },
