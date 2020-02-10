@@ -2,6 +2,7 @@ import express from 'express'
 import morgan from 'morgan'
 
 import projectRouter from './resources/projects/projects.router'
+import resourceRouter from './resources/resources/resources.router'
 
 const server = express()
 
@@ -18,6 +19,7 @@ server.use(express.json())
 server.use(jsonSyntaxErrorHandler)
 
 server.use('/api/projects', projectRouter)
+server.use('/api/resources', resourceRouter)
 
 server.get('/', (_req, res) => res.send(`<h2>Sprint!</h2>`))
 
