@@ -29,7 +29,6 @@
         "js": "never"
       }
     ],
-    "arrow-body-style": ["warn", "never"],
     "node/no-unsupported-features/es-syntax": "off",
     "node/no-missing-import": [
       "error",
