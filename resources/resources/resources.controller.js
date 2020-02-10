@@ -1,4 +1,4 @@
 import { crudControllers } from '../../utils/crud'
-import Post from './resources.model'
+import Resource from './resources.model'
 
-export default crudControllers(Post)
+export default crudControllers(Resource)

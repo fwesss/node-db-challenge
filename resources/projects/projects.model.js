@@ -2,7 +2,7 @@ import db from '../../data/dbConfig'
 
 export const get = () => db('projects')
 
-const getById = id =>
+export const getById = id =>
   db('projects')
     .where({ id })
     .first()
