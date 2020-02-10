@@ -4,6 +4,7 @@
   "repository": "https://github.com/fwesss/node-db-challenge.git",
   "license": "MIT",
   "author": "Westley Feller <feller.westley@gmail.com>",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "check-format": "yarn run prettier --ignore-path .gitignore --list-different",
